@@ -31,7 +31,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <ul class="quick-highlights">
         <li>Full-stack web development</li>
         <li>REST API design and backend systems</li>
-        <li>Modern frontend development with React</li>
+        <li>AI-powered chatbots and prompt engineering with RAG</li>
         <li>Database design and integration</li>
       </ul>
     </section>
@@ -223,7 +223,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <div class="timeline">
         <article>
           <h3>Supervisor - Stories Coffee Shop</h3>
-          <p class="meta">Nov 2024 - Present</p>
+          <p class="meta">Nov 2024 - Jan 2026</p>
           <p>Managed operations and customer service while serving 100+ beverages per day and training new staff.</p>
         </article>
         <article>
@@ -259,7 +259,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <h2>GitHub</h2>
       <p>
         I actively publish full-stack applications and ongoing development work. Repositories show practical
-        experience in frontend, backend, databases, API design, and deployment.
+        experience in frontend, backend, databases, API design, deployment, and AI-driven solutions.
+        My work includes intelligent chatbots using prompt engineering and RAG (Retrieval-Augmented Generation)
+        for enhanced conversational AI and automated customer support.
       </p>
       <a class="btn btn-solid" href="https://github.com/EngAkanaan" target="_blank" rel="noreferrer">Visit GitHub Profile</a>
     </section>
