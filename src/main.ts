@@ -25,7 +25,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </p>
       <div class="hero-actions">
         <a class="btn btn-solid" href="#projects">View Projects</a>
-        <a class="btn btn-outline" href="/AdamKanaan_CV_Engineering.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+        <a class="btn btn-outline" href="./AdamKanaan_CV_Engineering.pdf" target="_blank" rel="noreferrer">Download Resume</a>
         <a class="btn btn-outline" href="#contact">Contact Me</a>
       </div>
       <ul class="quick-highlights">
@@ -76,26 +76,26 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           </div>
           <div class="project-shots">
             <figure>
-              <a class="shot-link" href="/projects/intellibudget-1.jpeg" target="_blank" rel="noreferrer" aria-label="Open full image: IntelliBudget mobile dashboard in dark theme">
-                <img src="/projects/intellibudget-1.jpeg" alt="IntelliBudget mobile view dashboard with dark theme" loading="lazy" />
+              <a class="shot-link" href="./projects/intellibudget-1.jpeg" target="_blank" rel="noreferrer" aria-label="Open full image: IntelliBudget mobile dashboard in dark theme">
+                <img src="./projects/intellibudget-1.jpeg" alt="IntelliBudget mobile view dashboard with dark theme" loading="lazy" />
               </a>
               <figcaption>Mobile dashboard in dark theme</figcaption>
             </figure>
             <figure>
-              <a class="shot-link" href="/projects/intellibudget-2.png" target="_blank" rel="noreferrer" aria-label="Open full image: IntelliBudget budgets and categories section">
-                <img src="/projects/intellibudget-2.png" alt="IntelliBudget budgets and categories section" loading="lazy" />
+              <a class="shot-link" href="./projects/intellibudget-2.png" target="_blank" rel="noreferrer" aria-label="Open full image: IntelliBudget budgets and categories section">
+                <img src="./projects/intellibudget-2.png" alt="IntelliBudget budgets and categories section" loading="lazy" />
               </a>
               <figcaption>Budgets and categories section</figcaption>
             </figure>
             <figure>
-              <a class="shot-link" href="/projects/intellibudget-3.png" target="_blank" rel="noreferrer" aria-label="Open full image: IntelliBudget monthly details, income, expenses, and budget alerts">
-                <img src="/projects/intellibudget-3.png" alt="IntelliBudget monthly details with income, expenses, and budget alerts" loading="lazy" />
+              <a class="shot-link" href="./projects/intellibudget-3.png" target="_blank" rel="noreferrer" aria-label="Open full image: IntelliBudget monthly details, income, expenses, and budget alerts">
+                <img src="./projects/intellibudget-3.png" alt="IntelliBudget monthly details with income, expenses, and budget alerts" loading="lazy" />
               </a>
               <figcaption>Monthly details, income, expenses, and budget alerts</figcaption>
             </figure>
             <figure>
-              <a class="shot-link" href="/projects/intellibudget-4.png" target="_blank" rel="noreferrer" aria-label="Open full image: IntelliBudget main dashboard overview">
-                <img src="/projects/intellibudget-4.png" alt="IntelliBudget main dashboard" loading="lazy" />
+              <a class="shot-link" href="./projects/intellibudget-4.png" target="_blank" rel="noreferrer" aria-label="Open full image: IntelliBudget main dashboard overview">
+                <img src="./projects/intellibudget-4.png" alt="IntelliBudget main dashboard" loading="lazy" />
               </a>
               <figcaption>Main dashboard overview</figcaption>
             </figure>
@@ -119,32 +119,32 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           </div>
           <div class="project-shots">
             <figure>
-              <a class="shot-link" href="/projects/smartfarm-1.jpeg" target="_blank" rel="noreferrer" aria-label="Open full image: Smart Farm sign in and log in page">
-                <img src="/projects/smartfarm-1.jpeg" alt="Smart Farm sign in and log in page" loading="lazy" />
+              <a class="shot-link" href="./projects/smartfarm-1.jpeg" target="_blank" rel="noreferrer" aria-label="Open full image: Smart Farm sign in and log in page">
+                <img src="./projects/smartfarm-1.jpeg" alt="Smart Farm sign in and log in page" loading="lazy" />
               </a>
               <figcaption>Sign in and log in page</figcaption>
             </figure>
             <figure>
-              <a class="shot-link" href="/projects/smartfarm-2.jpeg" target="_blank" rel="noreferrer" aria-label="Open full image: Smart Farm admin dashboard">
-                <img src="/projects/smartfarm-2.jpeg" alt="Smart Farm admin dashboard" loading="lazy" />
+              <a class="shot-link" href="./projects/smartfarm-2.jpeg" target="_blank" rel="noreferrer" aria-label="Open full image: Smart Farm admin dashboard">
+                <img src="./projects/smartfarm-2.jpeg" alt="Smart Farm admin dashboard" loading="lazy" />
               </a>
               <figcaption>Admin dashboard</figcaption>
             </figure>
             <figure>
-              <a class="shot-link" href="/projects/smartfarm-3.jpeg" target="_blank" rel="noreferrer" aria-label="Open full image: Smart Farm user and farms management by admin">
-                <img src="/projects/smartfarm-3.jpeg" alt="Smart Farm user and farms management by admin" loading="lazy" />
+              <a class="shot-link" href="./projects/smartfarm-3.jpeg" target="_blank" rel="noreferrer" aria-label="Open full image: Smart Farm user and farms management by admin">
+                <img src="./projects/smartfarm-3.jpeg" alt="Smart Farm user and farms management by admin" loading="lazy" />
               </a>
               <figcaption>User and farms management by admin</figcaption>
             </figure>
             <figure>
-              <a class="shot-link" href="/projects/smartfarm-4.jpeg" target="_blank" rel="noreferrer" aria-label="Open full image: Smart Farm farmer dashboard">
-                <img src="/projects/smartfarm-4.jpeg" alt="Smart Farm farmer dashboard" loading="lazy" />
+              <a class="shot-link" href="./projects/smartfarm-4.jpeg" target="_blank" rel="noreferrer" aria-label="Open full image: Smart Farm farmer dashboard">
+                <img src="./projects/smartfarm-4.jpeg" alt="Smart Farm farmer dashboard" loading="lazy" />
               </a>
               <figcaption>Farmer dashboard</figcaption>
             </figure>
             <figure>
-              <a class="shot-link" href="/projects/smartfarm-5.jpeg" target="_blank" rel="noreferrer" aria-label="Open full image: Smart Farm email received for verification">
-                <img src="/projects/smartfarm-5.jpeg" alt="Smart Farm email received for verification" loading="lazy" />
+              <a class="shot-link" href="./projects/smartfarm-5.jpeg" target="_blank" rel="noreferrer" aria-label="Open full image: Smart Farm email received for verification">
+                <img src="./projects/smartfarm-5.jpeg" alt="Smart Farm email received for verification" loading="lazy" />
               </a>
               <figcaption>Email received for verification</figcaption>
             </figure>
