@@ -154,7 +154,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <article class="card-item">
           <div class="card-head">
             <h3>Flex Fits Website</h3>
-            <span class="status status-soon">Coming Soon</span>
+            <span class="status">Live Project</span>
           </div>
           <p>Online footwear showcase focused on clean product presentation and browsing.</p>
           <ul>
@@ -164,7 +164,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           </ul>
           <p class="tech">HTML, CSS, JavaScript</p>
           <div class="links">
-            <a href="#" aria-disabled="true">GitHub (Not Ready Yet)</a>
+            <a href="https://github.com/EngAkanaan/flexfits_website.git" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://flexfitswebsite2026.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
           </div>
         </article>
 
