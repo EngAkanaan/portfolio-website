@@ -165,7 +165,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <p class="tech">HTML, CSS, JavaScript</p>
           <div class="links">
             <a href="https://github.com/EngAkanaan/flexfits_website.git" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://flexfitswebsite2026.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
+            <a href="https://flexfitsstore.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
           </div>
         </article>
 
