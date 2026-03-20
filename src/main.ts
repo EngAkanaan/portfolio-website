@@ -84,7 +84,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <a href="https://flexfitsstore.vercel.app/" target="_blank" rel="noreferrer">Live Website</a>
           </div>
           <!-- FlexFits Website images from /public/projects/ -->
-          <!-- Files used: shop-page.png, cart-checkout.png, checkout-page.png, first-cusotmer-email.png, admin-inventory-overview.png, admin-dashboard-addproduct.png -->
+          <!-- Files used: shop-page.png, cart-checkout.png, checkout-page.png, first-customer-email.png, admin-inventory-overview.png, admin-dashboard-addproduct.png -->
           <div class="project-shots">
             <figure>
               <a class="shot-link" href="./projects/shop-page.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits Website shop page">
@@ -105,8 +105,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
               <figcaption>Checkout page</figcaption>
             </figure>
             <figure>
-              <a class="shot-link" href="./projects/first-cusotmer-email.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits Website first customer email">
-                <img src="./projects/first-cusotmer-email.png" alt="Flex Fits Website first customer email" loading="lazy" />
+              <a class="shot-link" href="./projects/first-customer-email.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits Website first customer email">
+                <img src="./projects/first-customer-email.png" alt="Flex Fits Website first customer email" loading="lazy" />
               </a>
               <figcaption>First customer email</figcaption>
             </figure>
@@ -128,7 +128,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <!-- PROJECT 2: Flex Fits AI Chatbot -->
         <article class="card-item">
           <div class="card-head">
-            <h3>Flex Fits AI Chatbot</h3>
+            <h3>Flex Fits AI Chatbot (Nelly)</h3>
             <span class="status">Live Bot</span>
           </div>
           <p>AI assistant to recommend shoe models based on user preferences and inventory.</p>
@@ -139,7 +139,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           </ul>
           <p class="tech">Python, AI APIs, Prompt Engineering, Data Processing</p>
           <div class="links">
-            <a href="https://t.me/FlexFits_CustomerSupport_bot" target="_blank" rel="noreferrer">Open Telegram Bot</a>
+            <a href="https://t.me/flexfitsbot" target="_blank" rel="noreferrer">Chat with Nelly on Telegram</a>
             <a href="https://github.com/EngAkanaan/FlexFits_Chatbot" target="_blank" rel="noreferrer">GitHub</a>
           </div>
           <!-- Replace these placeholders with your actual images from /public/projects/ -->

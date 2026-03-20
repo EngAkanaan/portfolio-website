@@ -462,6 +462,11 @@ h2 {
     --header-offset: 135px;
   }
 
+  main,
+  .footer {
+    width: calc(100% - 12px);
+  }
+
   .topbar {
     align-items: flex-start;
     flex-direction: column;
@@ -475,7 +480,8 @@ h2 {
   }
 
   .section {
-    padding: 22px;
+    margin: 14px auto;
+    padding: 16px;
   }
 
   .hero-layout {
@@ -483,7 +489,7 @@ h2 {
   }
 
   .hero-portrait {
-    width: min(100%, 190px);
+    width: min(100%, 220px);
   }
 
   .quick-highlights,
