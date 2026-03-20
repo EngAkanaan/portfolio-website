@@ -17,31 +17,39 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
   <main>
     <section id="home" class="section hero reveal">
-      <p class="eyebrow">Computer Engineering Graduate</p>
-      <h1>Full-Stack Engineer Building Reliable Digital Products</h1>
-      <p class="lead">
-        I build scalable web applications, API-driven systems, and responsive user experiences.
-        My focus is shipping software that is clean, useful, and ready for real users.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-solid" href="#projects">View Projects</a>
-        <a class="btn btn-outline" href="./AdamKanaan_CV_Engineering.pdf" target="_blank" rel="noreferrer">Download Resume</a>
-        <a class="btn btn-outline" href="#contact">Contact Me</a>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Engineering Graduate</p>
+          <h1>Full-Stack Engineer Building Reliable Digital Products</h1>
+          <p class="lead">
+            I build scalable web applications, API-driven systems, and responsive user experiences.
+            My focus is shipping software that is clean, useful, and ready for real users.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#projects">View Projects</a>
+            <a class="btn btn-outline" href="./AdamKanaan_CV_Engineering.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+          </div>
+          <ul class="quick-highlights">
+            <li>Full-stack web development</li>
+            <li>REST API design and backend systems</li>
+            <li>AI-powered chatbots and prompt engineering with RAG</li>
+            <li>Database design and integration</li>
+          </ul>
+        </div>
+
+        <figure class="hero-portrait">
+          <img src="./profile-photo.png" alt="Portrait of Adam Kanaan" loading="eager" />
+        </figure>
       </div>
-      <ul class="quick-highlights">
-        <li>Full-stack web development</li>
-        <li>REST API design and backend systems</li>
-        <li>AI-powered chatbots and prompt engineering with RAG</li>
-        <li>Database design and integration</li>
-      </ul>
     </section>
 
     <section id="about" class="section reveal">
       <h2>About Me</h2>
       <p>
-        I am a Computer Engineering graduate with hands-on experience in full-stack development using
-        React, TypeScript, Node.js, and PostgreSQL. I design scalable applications, secure backend APIs,
-        and responsive interfaces for mobile and desktop users.
+        I am a Computer Engineering graduate specializing in full-stack development (React, TypeScript, Node.js, PostgreSQL) 
+        and AI-powered systems. I build scalable applications, intelligent chatbots with RAG integration, and secure APIs 
+        using advanced prompt engineering for production-grade conversational AI and automated customer support.
       </p>
       <p>
         Beyond software, I am the founder of Flex Fits, a footwear brand where I manage sourcing,
@@ -58,6 +66,113 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <section id="projects" class="section reveal">
       <h2>Projects</h2>
       <div class="cards">
+        <!-- PROJECT 1: Flex Fits Website -->
+        <article class="card-item">
+          <div class="card-head">
+            <h3>Flex Fits Website</h3>
+            <span class="status">Live Project</span>
+          </div>
+          <p>Online footwear showcase focused on clean product presentation and browsing.</p>
+          <ul>
+            <li>Product catalog and filtering features</li>
+            <li>Responsive layout for desktop and mobile</li>
+            <li>Minimal and clear storefront UI</li>
+          </ul>
+          <p class="tech">HTML, CSS, JavaScript</p>
+          <div class="links">
+            <a href="https://github.com/EngAkanaan/flexfits_website.git" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://flexfitsstore.vercel.app/" target="_blank" rel="noreferrer">Live Website</a>
+          </div>
+          <!-- FlexFits Website images from /public/projects/ -->
+          <!-- Files used: shop-page.png, cart-checkout.png, checkout-page.png, first-cusotmer-email.png, admin-inventory-overview.png, admin-dashboard-addproduct.png -->
+          <div class="project-shots">
+            <figure>
+              <a class="shot-link" href="./projects/shop-page.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits Website shop page">
+                <img src="./projects/shop-page.png" alt="Flex Fits Website shop page" loading="lazy" />
+              </a>
+              <figcaption>Shop page</figcaption>
+            </figure>
+            <figure>
+              <a class="shot-link" href="./projects/cart-checkout.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits Website cart and checkout flow">
+                <img src="./projects/cart-checkout.png" alt="Flex Fits Website cart and checkout flow" loading="lazy" />
+              </a>
+              <figcaption>Cart and checkout</figcaption>
+            </figure>
+            <figure>
+              <a class="shot-link" href="./projects/checkout-page.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits Website checkout page">
+                <img src="./projects/checkout-page.png" alt="Flex Fits Website checkout page" loading="lazy" />
+              </a>
+              <figcaption>Checkout page</figcaption>
+            </figure>
+            <figure>
+              <a class="shot-link" href="./projects/first-cusotmer-email.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits Website first customer email">
+                <img src="./projects/first-cusotmer-email.png" alt="Flex Fits Website first customer email" loading="lazy" />
+              </a>
+              <figcaption>First customer email</figcaption>
+            </figure>
+            <figure>
+              <a class="shot-link" href="./projects/admin-inventory-overview.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits Website admin inventory overview">
+                <img src="./projects/admin-inventory-overview.png" alt="Flex Fits Website admin inventory overview" loading="lazy" />
+              </a>
+              <figcaption>Admin inventory overview</figcaption>
+            </figure>
+            <figure>
+              <a class="shot-link" href="./projects/admin-dashboard-addproduct.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits Website admin dashboard add product page">
+                <img src="./projects/admin-dashboard-addproduct.png" alt="Flex Fits Website admin dashboard add product page" loading="lazy" />
+              </a>
+              <figcaption>Admin dashboard add product</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Flex Fits AI Chatbot -->
+        <article class="card-item">
+          <div class="card-head">
+            <h3>Flex Fits AI Chatbot</h3>
+            <span class="status">Live Bot</span>
+          </div>
+          <p>AI assistant to recommend shoe models based on user preferences and inventory.</p>
+          <ul>
+            <li>Natural-language customer interaction</li>
+            <li>Product recommendation logic</li>
+            <li>Automated support for repetitive questions</li>
+          </ul>
+          <p class="tech">Python, AI APIs, Prompt Engineering, Data Processing</p>
+          <div class="links">
+            <a href="https://t.me/FlexFits_CustomerSupport_bot" target="_blank" rel="noreferrer">Open Telegram Bot</a>
+            <a href="https://github.com/EngAkanaan/FlexFits_Chatbot" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <!-- Replace these placeholders with your actual images from /public/projects/ -->
+          <!-- Required files: chatbot-shoe-selection.png, chatbot-delivery-question.png, chatbot-order-confirmation.png, admin-order-notification.png -->
+          <div class="project-shots">
+            <figure>
+              <a class="shot-link" href="./projects/chatbot-shoe-selection.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits chatbot shoe selection">
+                <img src="./projects/chatbot-shoe-selection.png" alt="Flex Fits chatbot shoe selection" loading="lazy" />
+              </a>
+              <figcaption>Shoe selection</figcaption>
+            </figure>
+            <figure>
+              <a class="shot-link" href="./projects/chatbot-delivery-question.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits chatbot delivery question">
+                <img src="./projects/chatbot-delivery-question.png" alt="Flex Fits chatbot delivery question" loading="lazy" />
+              </a>
+              <figcaption>Delivery question</figcaption>
+            </figure>
+            <figure>
+              <a class="shot-link" href="./projects/chatbot-order-confirmation.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits chatbot order confirmation">
+                <img src="./projects/chatbot-order-confirmation.png" alt="Flex Fits chatbot order confirmation" loading="lazy" />
+              </a>
+              <figcaption>Order confirmation</figcaption>
+            </figure>
+            <figure>
+              <a class="shot-link" href="./projects/admin-order-notification.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits admin order notification">
+                <img src="./projects/admin-order-notification.png" alt="Flex Fits admin order notification" loading="lazy" />
+              </a>
+              <figcaption>Admin order notification</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: IntelliBudget -->
         <article class="card-item">
           <div class="card-head">
             <h3>IntelliBudget</h3>
@@ -102,6 +217,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           </div>
         </article>
 
+        <!-- PROJECT 4: Smart Farm System -->
         <article class="card-item">
           <div class="card-head">
             <h3>Smart Farm System</h3>
@@ -150,42 +266,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             </figure>
           </div>
         </article>
-
-        <article class="card-item">
-          <div class="card-head">
-            <h3>Flex Fits Website</h3>
-            <span class="status">Live Project</span>
-          </div>
-          <p>Online footwear showcase focused on clean product presentation and browsing.</p>
-          <ul>
-            <li>Product catalog and filtering features</li>
-            <li>Responsive layout for desktop and mobile</li>
-            <li>Minimal and clear storefront UI</li>
-          </ul>
-          <p class="tech">HTML, CSS, JavaScript</p>
-          <div class="links">
-            <a href="https://github.com/EngAkanaan/flexfits_website.git" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://flexfitsstore.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
-
-        <article class="card-item">
-          <div class="card-head">
-            <h3>Flex Fits AI Chatbot</h3>
-            <span class="status">Live Bot</span>
-          </div>
-          <p>AI assistant to recommend shoe models based on user preferences and inventory.</p>
-          <ul>
-            <li>Natural-language customer interaction</li>
-            <li>Product recommendation logic</li>
-            <li>Automated support for repetitive questions</li>
-          </ul>
-          <p class="tech">Python, AI APIs, Prompt Engineering, Data Processing</p>
-          <div class="links">
-            <a href="https://t.me/FlexFits_CustomerSupport_bot" target="_blank" rel="noreferrer">Open Telegram Bot</a>
-            <a href="https://github.com/EngAkanaan/FlexFits_Chatbot" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
-        </article>
       </div>
     </section>
 
@@ -223,6 +303,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <h2>Experience</h2>
       <div class="timeline">
         <article>
+          <h3>FlexFits Owner</h3>
+          <p class="meta">December 2024 - Present</p>
+          <p>Lead both technical and business operations by managing the FlexFits e-commerce platform, improving the website and AI chatbot, and handling customer communication and order workflows end to end.</p>
+        </article>
+        <article>
           <h3>Supervisor - Stories Coffee Shop</h3>
           <p class="meta">Nov 2024 - Jan 2026</p>
           <p>Managed operations and customer service while serving 100+ beverages per day and training new staff.</p>
@@ -241,17 +326,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </section>
 
     <section id="education" class="section reveal">
-      <h2>Education & Entrepreneurship</h2>
+      <h2>Education</h2>
       <div class="split">
         <article>
           <h3>B.S. in Computer Engineering</h3>
           <p>Lebanese International University</p>
           <p class="meta">Sep 2022 - Sep 2025</p>
-        </article>
-        <article>
-          <h3>Founder - Flex Fits</h3>
-          <p class="meta">Dec 2024 - Present</p>
-          <p>Built and operate a footwear brand, managing sourcing, content, customer communication, and fulfillment.</p>
         </article>
       </div>
     </section>
