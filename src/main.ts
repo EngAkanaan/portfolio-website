@@ -274,27 +274,31 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <div class="skills-grid">
         <div>
           <h3>Languages</h3>
-          <p>JavaScript, TypeScript, Python, C++, SQL</p>
+          <p>JavaScript (ES6+), TypeScript, Python, C++, SQL</p>
         </div>
         <div>
           <h3>Frontend</h3>
-          <p>React.js, HTML5, CSS3, Tailwind CSS, Responsive Design</p>
+          <p>React.js, HTML5, CSS3, Tailwind CSS, Responsive Design, State Management, UI Logic Design, Animation</p>
         </div>
         <div>
           <h3>Backend</h3>
-          <p>Node.js, Express.js, REST APIs, JWT, bcrypt, MVC Architecture</p>
+          <p>Node.js, Express.js, REST APIs, JWT, bcrypt, MVC Architecture, E-commerce Workflow, Order Management, Admin Dashboard, Stock Reservation (FCFS), Automated Inventory Sync, Financial Metrics, Analytics, Error Handling, Reliability Engineering, Event-Driven Email Notification</p>
         </div>
         <div>
           <h3>Databases</h3>
-          <p>PostgreSQL, MySQL, Supabase, Sequelize ORM</p>
+          <p>PostgreSQL, MySQL, Supabase, Sequelize ORM, Data Modeling, SQL Functions & Triggers, Supabase Integration</p>
         </div>
         <div>
           <h3>Tools</h3>
-          <p>Git, GitHub, VS Code, Vite, Vercel, CI/CD Fundamentals</p>
+          <p>Git, GitHub, VS Code, Vite, Vercel, CI/CD, Environment Configuration, Production Build & Deployment, Codebase Cleanup, Refactoring, Documentation</p>
         </div>
         <div>
+          <h3>Python & AI</h3>
+          <p>Modular Python, NLP (intent detection, entity extraction, RAG), API Integration (Telegram, Supabase), Conversation Flow, Automated Testing (Pytest), Secure Credential Handling, CLI & Chatbot Development</p>
+        </div>
+        <div class="soft-skills-full">
           <h3>Soft Skills</h3>
-          <p>Problem Solving, Team Collaboration, Leadership, Technical Communication</p>
+          <p>Problem Solving, Team Collaboration, Leadership, Technical Communication, Debugging, Troubleshooting</p>
         </div>
       </div>
     </section>
