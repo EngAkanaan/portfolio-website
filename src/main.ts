@@ -394,4 +394,19 @@ const revealObserver = new IntersectionObserver(
   { threshold: 0.15 }
 )
 
-document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el))
+function observeAllReveals() {
+  document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el))
+}
+observeAllReveals();
+window.addEventListener('load', observeAllReveals);
+window.addEventListener('resize', observeAllReveals);
+
+// Instantly reveal .reveal elements in viewport on DOMContentLoaded
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll<HTMLElement>('.reveal').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add('is-visible');
+    }
+  });
+});
