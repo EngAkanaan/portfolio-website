@@ -70,7 +70,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <article class="card-item">
           <div class="card-head">
             <h3>Flex Fits Website</h3>
-            <span class="status">Live Project</span>
+            <a class="status status-btn" href="https://flexfitsstore.vercel.app/" target="_blank" rel="noreferrer">Live Project</a>
           </div>
           <p>Online footwear showcase focused on clean product presentation and browsing.</p>
           <ul>
@@ -129,7 +129,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <article class="card-item">
           <div class="card-head">
             <h3>Flex Fits AI Chatbot (Nelly)</h3>
-            <span class="status">Live Bot</span>
+            <a class="status status-btn" href="https://t.me/flexfitsbot" target="_blank" rel="noreferrer">Live Bot</a>
           </div>
           <p>AI assistant to recommend shoe models based on user preferences and inventory.</p>
           <ul>
