@@ -39,7 +39,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </div>
 
         <figure class="hero-portrait">
-          <img src="./profile-photo.png" alt="Portrait of Adam Kanaan" loading="eager" />
+          <img src="./projects/profile-photo.png" alt="Portrait of Adam Kanaan" loading="eager" />
         </figure>
       </div>
     </section>
@@ -142,32 +142,37 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <a href="https://t.me/flexfitsbot" target="_blank" rel="noreferrer">Chat with Nelly on Telegram</a>
             <a href="https://github.com/EngAkanaan/FlexFits_Chatbot" target="_blank" rel="noreferrer">GitHub</a>
           </div>
-          <!-- Replace these placeholders with your actual images from /public/projects/ -->
-          <!-- Required files: chatbot-shoe-selection.png, chatbot-delivery-question.png, chatbot-order-confirmation.png, admin-order-notification.png -->
+          <!-- Chatbot flow: chatbot-greetings.png, chatbot-shoe-selection.png, chatbot-add-to-cart.png, chatbot-checkout.png, chatbot-order-confirmation.png -->
           <div class="project-shots">
             <figure>
+              <a class="shot-link" href="./projects/chatbot-greetings.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits chatbot greeting">
+                <img src="./projects/chatbot-greetings.png" alt="Flex Fits AI chatbot Nelly greeting the user" loading="lazy" />
+              </a>
+              <figcaption>Greeting</figcaption>
+            </figure>
+            <figure>
               <a class="shot-link" href="./projects/chatbot-shoe-selection.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits chatbot shoe selection">
-                <img src="./projects/chatbot-shoe-selection.png" alt="Flex Fits chatbot shoe selection" loading="lazy" />
+                <img src="./projects/chatbot-shoe-selection.png" alt="Flex Fits chatbot shoe selection flow" loading="lazy" />
               </a>
               <figcaption>Shoe selection</figcaption>
             </figure>
             <figure>
-              <a class="shot-link" href="./projects/chatbot-delivery-question.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits chatbot delivery question">
-                <img src="./projects/chatbot-delivery-question.png" alt="Flex Fits chatbot delivery question" loading="lazy" />
+              <a class="shot-link" href="./projects/chatbot-add-to-cart.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits chatbot add to cart">
+                <img src="./projects/chatbot-add-to-cart.png" alt="Flex Fits chatbot adding items to cart" loading="lazy" />
               </a>
-              <figcaption>Delivery question</figcaption>
+              <figcaption>Add to cart</figcaption>
+            </figure>
+            <figure>
+              <a class="shot-link" href="./projects/chatbot-checkout.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits chatbot checkout">
+                <img src="./projects/chatbot-checkout.png" alt="Flex Fits chatbot checkout step" loading="lazy" />
+              </a>
+              <figcaption>Checkout</figcaption>
             </figure>
             <figure>
               <a class="shot-link" href="./projects/chatbot-order-confirmation.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits chatbot order confirmation">
                 <img src="./projects/chatbot-order-confirmation.png" alt="Flex Fits chatbot order confirmation" loading="lazy" />
               </a>
               <figcaption>Order confirmation</figcaption>
-            </figure>
-            <figure>
-              <a class="shot-link" href="./projects/admin-order-notification.png" target="_blank" rel="noreferrer" aria-label="Open full image: Flex Fits admin order notification">
-                <img src="./projects/admin-order-notification.png" alt="Flex Fits admin order notification" loading="lazy" />
-              </a>
-              <figcaption>Admin order notification</figcaption>
             </figure>
           </div>
         </article>
@@ -383,6 +388,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </footer>
 `
 
+// Use threshold 0: tall sections (e.g. Projects) often have <15% of their height in
+// the viewport when jumping via #projects, so a 0.15 threshold left them invisible.
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -391,22 +398,31 @@ const revealObserver = new IntersectionObserver(
       }
     })
   },
-  { threshold: 0.15 }
+  { threshold: 0 }
 )
+
+function revealIfInView() {
+  document.querySelectorAll<HTMLElement>('.reveal').forEach((el) => {
+    const rect = el.getBoundingClientRect()
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add('is-visible')
+    }
+  })
+}
 
 function observeAllReveals() {
   document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el))
 }
-observeAllReveals();
-window.addEventListener('load', observeAllReveals);
-window.addEventListener('resize', observeAllReveals);
 
-// Instantly reveal .reveal elements in viewport on DOMContentLoaded
-window.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll<HTMLElement>('.reveal').forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight && rect.bottom > 0) {
-      el.classList.add('is-visible');
-    }
-  });
-});
+observeAllReveals()
+revealIfInView()
+window.addEventListener('load', () => {
+  observeAllReveals()
+  revealIfInView()
+})
+window.addEventListener('resize', () => {
+  observeAllReveals()
+  revealIfInView()
+})
+
+window.addEventListener('DOMContentLoaded', revealIfInView)
